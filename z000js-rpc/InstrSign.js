@@ -37,7 +37,6 @@ if (tgtAnt === "1" && 5  == process.argv.length) {
 if (flag == 1) {
     var msg = web3utils.soliditySha3({t: "uint80", v: key}, {t: "uint64", v: validTime});
     var sig = web3.eth.sign(defaultAccount, msg);
-    console.log(sig)    
     var v = parseInt(sig.slice(130,132), 16); // This is only a variable of numeric type.
     var r = sig.slice(0,66);
     var s = '0x' + sig.slice(66,130);

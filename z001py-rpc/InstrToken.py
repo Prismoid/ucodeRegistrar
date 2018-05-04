@@ -5,6 +5,7 @@ import json
 import sys
 
 web3 = Web3(HTTPProvider('http://localhost:8545'))
+# web3 = Web3(HTTPProvider('https://ropsten.infura.io/liHdCRDQJCZoWgvxadDd'))
 # web3 = Web3(IPCProvider())
 
 def howToUse():
